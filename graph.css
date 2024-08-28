@@ -1,13 +1,3 @@
-body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #f4f4f4;
-}
-
 .graph {
     display: flex;
     align-items: flex-end;
@@ -29,4 +19,34 @@ body {
     padding: 5px;
     box-sizing: border-box;
     border-radius: 5px;
+}
+
+.hour {
+    margin-top: -9px;
+    width: 10%;
+}
+
+.quantity {
+    margin-top: -10px;
+    width: 50%;
+}
+
+.options {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-right: 100px;
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+}
+
+.date {
+    margin-left: 5px;
+}
+
+.graph-container {
+    display: flex;
 }
