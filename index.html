@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="body">
+
+    <div class="login-container">
+        <div>
+            <button onclick="setClient()">client</button>
+            <button onclick="setTech()">tech</button>
+        </div>
+        <div>
+            <label for=""> User Name </label>
+            <input type="text" placeholder="Enter Username">
+        </div>
+        <div>
+            <label for=""> Password </label>
+            <input type="text" placeholder="Enter Password">
+        </div>
+        <div>
+            <a id="login" href="client.html"> login </a>
+        </div>
+    </div>
+
+
+
+    <script>
+        const setClient = () => {
+            const loginBtn = document.getElementById('login')
+            loginBtn.setAttribute("href","client.html")
+        }
+
+        const setTech = () => {
+            const loginBtn = document.getElementById('login')
+            loginBtn.setAttribute("href","technician.html")
+        }
+    </script>
+
+</body>
+</html>
