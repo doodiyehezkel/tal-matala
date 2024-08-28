@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.graph {
+    display: flex;
+    align-items: flex-end;
+    gap: 10px; /* Space between bars */
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+}
+
+.bar {
+    width: 40px; /* Width of each bar */
+    background-color: #4CAF50; /* Color of the bars */
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 5px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}

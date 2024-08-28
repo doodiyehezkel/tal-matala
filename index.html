@@ -10,7 +10,7 @@
 
     <div class="login-container">
 
-    <form id="form"  method="get" action="" target="client/client.html" onsubmit="onSubmit()">
+    <form id="form"  method="get" action="" target="client.html" onsubmit="onSubmit()">
         <div class="field buttons">
             <button class="identifier" type="button" onclick="setClient()">client</button>
             <button class="identifier" type="button" onclick="setTech()">technician</button>
@@ -30,10 +30,10 @@
 </form>
 
     <script>
-        let navigateTo = 'client/client.html';
+        let navigateTo = 'client.html';
         
         const setClient = () => {
-            navigateTo = 'client/client.html';
+            navigateTo = 'client.html';
             const loginBtn = document.getElementById('submit');
             document.getElementById('form').setAttribute("target", navigateTo);
             loginBtn.setAttribute("href",navigateTo);
@@ -42,7 +42,7 @@
         }
 
         const setTech = () => {
-            navigateTo = 'technician/technician.html';
+            navigateTo = 'technician.html';
             const loginBtn = document.getElementById('submit');
             document.getElementById('form').setAttribute("target", navigateTo);
             loginBtn.setAttribute("href",navigateTo);
