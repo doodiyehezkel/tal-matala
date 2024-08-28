@@ -1,49 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="client-new-service-call.css">
 </head>
-<body>
-    <h1>פתח קריאה חדשה</h1>
-    <form action="client-landing-page.html" onsubmit="onSubmitForm()">
-        <div>
-            <label for="">האתר בו תרצה לדווח על תקלה:</label>
-            <input required type="text">
-        </div>
-        <div>
-            <label for="">סוג המערכת:</label>
-            <input required type="text">
-        </div>
-        <div>
-            <label for="">תיאור התקלה:</label>
-            <textarea name="" id="" required type="text"></textarea>
-        </div>
-        <div>
-            <label for="">שם איש קשר:</label>
-            <input required type="text">
-        </div>
-        <div>
-            <label for="">טלפון איש קשר:<span>(xxx-xxx-xxxx)</span> </label>
-            <input required type="tel" pattern="[0-9]{3}[0-9]{3}[0-9]{4}">
-        </div>
-        <div>
-            <label for="">הוסף תמונה או סרטון:</label>
-            <input type="file">
-        </div>
-        <div>
-            <button type="submit"> שלח פניה </button>
-        </div>
-    </form>
 
+<body>
+
+    <header>
+        <img width="50px" src="logo.jpg">
+    </header>
+
+    <main>
+        <h1>פתח קריאה חדשה</h1>
+        <form action="client-landing-page.html" onsubmit="onSubmitForm()">
+            <div>
+                <label for="">האתר בו תרצה לדווח על תקלה:</label>
+                <input required type="text">
+            </div>
+            <div>
+                <label for="">סוג המערכת:</label>
+                <input required type="text">
+            </div>
+            <div>
+                <label for="">תיאור התקלה:</label>
+                <textarea name="" id="" required type="text"></textarea>
+            </div>
+            <div>
+                <label for="">שם איש קשר:</label>
+                <input required type="text">
+            </div>
+            <div>
+                <label for="">טלפון איש קשר:<span>(xxx-xxx-xxxx)</span> </label>
+                <input required type="tel" pattern="[0-9]{3}[0-9]{3}[0-9]{4}">
+            </div>
+            <div>
+                <label for="">הוסף תמונה או סרטון:</label>
+                <input type="file">
+            </div>
+            <div>
+                <button type="submit"> שלח פניה </button>
+            </div>
+        </form>
+    </main>
     <script>
         const onSubmitForm = () => {
-            alert('Open new service call successfully number of call service is 10')
+            alert('פתיחת תקלה מספר 10 הסתיימה בהצלחה !')
         }
     </script>
 
 
 </body>
+
 </html>

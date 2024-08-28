@@ -14,3 +14,8 @@ form div{
 .approve-call {
     flex-direction: row;
 }
+
+form div textarea {
+    height: 100px;
+    resize: none;
+}

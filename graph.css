@@ -1,4 +1,4 @@
-#body {
+#main {
     direction: ltr;
 }
 
@@ -53,4 +53,8 @@ label {
 
 .graph-container {
     display: flex;
+}
+
+.back-button{
+    margin: 3rem;
 }
