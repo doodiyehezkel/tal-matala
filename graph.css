@@ -1,3 +1,7 @@
+#body {
+    direction: ltr;
+}
+
 .graph {
     display: flex;
     align-items: flex-end;

@@ -1,0 +1,22 @@
+body {
+    direction: rtl;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100dvh;
+}
+
+form div {
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+form div textarea {
+    height: 100px;
+    resize: none;
+}
+

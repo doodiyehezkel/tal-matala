@@ -1,34 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dummy Graph with Divs and CSS</title>
-    <link rel="stylesheet" href="graph.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="graph.css">
 
 </head>
-<body>
+
+<body id="body">
 
     <div>
-    <h1>התפלגות נתוני קריאות</h1>
-</div>
-<div class="quantity">כמות</div>
-
-<div class="graph-container">
-    <div class="graph">
-        <div class="bar" style="height: 150px;">13:00</div>
-        <div class="bar" style="height: 200px;">14:00</div>
-        <div class="bar" style="height: 100px;">15:00</div>
-        <div class="bar" style="height: 175px;">16:00</div>
-        <div class="bar" style="height: 125px;">17:00</div>
+        <h1>התפלגות נתוני קריאות</h1>
     </div>
-    <div>
-        <div class="options">
-            <input class="date" type="date">   עד תאריך  
-            <input class="date" type="date">   מתאריך   
+    <div class="quantity">כמות</div>
+
+    <div class="graph-container">
+        <div class="graph">
+            <div class="bar" style="height: 150px;">13:00</div>
+            <div class="bar" style="height: 200px;">14:00</div>
+            <div class="bar" style="height: 100px;">15:00</div>
+            <div class="bar" style="height: 175px;">16:00</div>
+            <div class="bar" style="height: 125px;">17:00</div>
+        </div>
+        <div>
+            <div class="options">
+                <input class="date" type="date"> עד תאריך
+                <input class="date" type="date"> מתאריך
             </div>
-            
+
             <div class="options">
                 <div>
                     <label>סוג תקלה</label>
@@ -38,7 +40,7 @@
                     </select>
                 </div>
             </div>
-            
+
             <div class="options">
                 <div>
                     <label>שם טכנאי</label>
@@ -48,7 +50,7 @@
                     </select>
                 </div>
             </div>
-            
+
             <div class="options">
                 <div>
                     <label>שם לקוח</label>
@@ -56,12 +58,13 @@
                         <option>אריק</option>
                         <option>דוד</option>
                     </select>
-                </div>            
-    </div>
-</div>
+                </div>
+            </div>
+        </div>
 
-</div>
+    </div>
 
     <div class="hour">שעה ביום</div>
 </body>
+
 </html>

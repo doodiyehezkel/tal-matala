@@ -10,43 +10,37 @@
 
     <div class="login-container">
 
-    <form id="form"  method="get" action="" target="client.html" onsubmit="onSubmit()">
+    <form id="form"  method="get" action="client-landing-page.html" onsubmit="onSubmit()">
         <div class="field buttons">
-            <button class="identifier" type="button" onclick="setClient()">client</button>
-            <button class="identifier" type="button" onclick="setTech()">technician</button>
+            <button class="identifier" type="button" onclick="setClient()">לקוח</button>
+            <button class="identifier" type="button" onclick="setTech()">טכנאי</button>
         </div>
         <div class="field">
-            <label id="clientLabel" for=""> client code</label>
+            <label id="clientLabel" for="">קוד לקוח</label>
             <input required type="text">
         </div>
         <div class="field">
-            <label id="passwordLabel" for=""> password </label>
+            <label id="passwordLabel" for=""> סיסמא </label>
             <input required type="text">
         </div>
         <div class="field buttons">
-            <button id="submit" type="submit"> Submit </button>
+            <button id="submit" type="submit"> התחבר </button>
         </div>
     </div>
 </form>
 
     <script>
-        let navigateTo = 'client.html';
-        
         const setClient = () => {
-            navigateTo = 'client.html';
+            let navigateTo = 'client.html';
             const loginBtn = document.getElementById('submit');
-            document.getElementById('form').setAttribute("target", navigateTo);
-            loginBtn.setAttribute("href",navigateTo);
-
-            document.getElementById('clientLabel').innerHTML = 'client code';
+            document.getElementById('form').setAttribute("action", `client-landing-page.html`);
+            document.getElementById('clientLabel').innerHTML = 'קוד לקוח';
         }
 
         const setTech = () => {
-            navigateTo = 'technician.html';
             const loginBtn = document.getElementById('submit');
-            document.getElementById('form').setAttribute("target", navigateTo);
-            loginBtn.setAttribute("href",navigateTo);
-            document.getElementById('clientLabel').innerHTML = 'technician code'
+            document.getElementById('form').setAttribute("action", `technician-landing-page.html`);
+            document.getElementById('clientLabel').innerHTML = 'קוד טכנאי'
         }
 
         const onSubmit = () => {
