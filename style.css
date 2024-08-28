@@ -1,12 +1,24 @@
 body {
+    margin: 0;
+    padding: 0;
+}
+
+main {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 80vh;
     margin: 0;
     padding: 0;
 }
+
+header {
+    direction: rtl;
+    background-color: aqua;
+    padding: 5px;
+}
+
 .login-container {
     border: 1px solid black;
     width: 350px;
