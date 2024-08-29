@@ -1,6 +1,46 @@
+
+form {
+    box-shadow: 18px 18px 12px 10px #7c7c7c66;
+    border-radius: 5px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form h1 {
+    width: 100%;
+    text-align: center;
+    background-color: #758694;
+    color: white;
+    margin: 0;
+    padding: 20px 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
 form div{
     display: flex;
     flex-direction: column;
+    margin: 12px 0;
+    width: 70%;
+}
+
+
+form div input[type=text] ,input[type=tel] {
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+form div input[type=text]:focus ,input[type=tel]:focus {
+    outline: none;
+    border-bottom: 1px solid #7C93C3;
+}
+
+form div label {
+    width: 100%;
+    margin: 5px 0;
 }
 
 .buttons {
@@ -19,3 +59,19 @@ form div textarea {
     height: 100px;
     resize: none;
 }
+
+button {
+    width: 100px;
+    height: 30px;
+    border: 0;
+    cursor: pointer;
+    background-color: #758694;
+    color: white;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #F7E7DC;
+    color: black;
+}
+

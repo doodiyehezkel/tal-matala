@@ -66,3 +66,24 @@ button[type=submit]:hover {
     justify-content: center;
     align-items: center;
 }
+
+
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 4px 8px;
+    cursor: pointer;
+}
+
+.custom-file-upload:hover {
+    background-color: #ccc;
+    color: white;
+}
+
+form div .custom-file-upload {
+    width: 30%;
+}

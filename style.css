@@ -1,3 +1,8 @@
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -18,7 +23,6 @@ header {
     direction: rtl;
     background-color: #405D72;
     padding: 5px;
-    height: 10dvh;
 }
 
 .login-container {
