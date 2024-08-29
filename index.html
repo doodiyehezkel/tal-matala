@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body id="body">
 
     <header>
@@ -13,46 +15,52 @@
     </header>
 
     <main>
-    <div class="login-container">
+        <div class="login-container">
 
-    <form id="form"  method="get" action="client-landing-page.html" onsubmit="onSubmit()">
-        <div class="field buttons">
-            <button class="identifier" type="button" onclick="setClient()">לקוח</button>
-            <button class="identifier" type="button" onclick="setTech()">טכנאי</button>
+            <form id="form" method="get" action="client-landing-page.html" onsubmit="onSubmit()">
+                <div class="field actions-buttons">
+                    <button class="identifier client-btn" type="button" onclick="setClient()">לקוח</button>
+                    <button class="identifier tech-btn" type="button" onclick="setTech()">טכנאי</button>
+                </div>
+                <div class="field">
+                    <div class="label-container">
+                        <label id="clientLabel" for="">קוד לקוח:</label>
+                    </div>
+                    <input required type="text">
+                </div>
+                <div class="field">
+
+                    <div class="label-container">
+                        <label id="passwordLabel" for="">סיסמא:</label>
+                    </div>
+                    <input required type="text">
+                </div>
+                <div class="field submit">
+                    <button id="submit" type="submit"> התחבר </button>
+                </div>
         </div>
-        <div class="field">
-            <label id="clientLabel" for="">קוד לקוח</label>
-            <input required type="text">
-        </div>
-        <div class="field">
-            <label id="passwordLabel" for=""> סיסמא </label>
-            <input required type="text">
-        </div>
-        <div class="field buttons">
-            <button id="submit" type="submit"> התחבר </button>
-        </div>
-    </div>
-</form>
+        </form>
 
-    <script>
-        const setClient = () => {
-            let navigateTo = 'client.html';
-            const loginBtn = document.getElementById('submit');
-            document.getElementById('form').setAttribute("action", `client-landing-page.html`);
-            document.getElementById('clientLabel').innerHTML = 'קוד לקוח';
-        }
+        <script>
+            const setClient = () => {
+                let navigateTo = 'client.html';
+                const loginBtn = document.getElementById('submit');
+                document.getElementById('form').setAttribute("action", `client-landing-page.html`);
+                document.getElementById('clientLabel').innerHTML = 'קוד לקוח:';
+            }
 
-        const setTech = () => {
-            const loginBtn = document.getElementById('submit');
-            document.getElementById('form').setAttribute("action", `technician-landing-page.html`);
-            document.getElementById('clientLabel').innerHTML = 'קוד טכנאי'
-        }
+            const setTech = () => {
+                const loginBtn = document.getElementById('submit');
+                document.getElementById('form').setAttribute("action", `technician-landing-page.html`);
+                document.getElementById('clientLabel').innerHTML = 'קוד טכנאי:'
+            }
 
-        const onSubmit = () => {
-            window.location.replace(navigateTo)
-        }
+            const onSubmit = () => {
+                window.location.replace(navigateTo)
+            }
 
-    </script>
-</main>
+        </script>
+    </main>
 </body>
+
 </html>

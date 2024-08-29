@@ -9,30 +9,46 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 80vh;
+    min-height: 85vh;
     margin: 0;
     padding: 0;
 }
 
 header {
     direction: rtl;
-    background-color: aqua;
+    background-color: #405D72;
     padding: 5px;
+    height: 10dvh;
 }
 
 .login-container {
-    border: 1px solid black;
-    width: 350px;
-    height: 200px;
+    box-shadow: 18px 18px 12px 10px #7c7c7c66;
+    border-radius: 5px;
+    width: 400x;
+    height: 300px;
 }
 
+
+
 .field {
-    margin: 10px;
+    margin: 35px;
     display: flex;
 }
 
+.field input {
+    padding: 7px 5px;
+    font-size: medium;
+}
+
+.label-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 label {
-    width: 120px;
+    width: 100px;
+    font-size: large;
 }
 
 .buttons {
@@ -42,4 +58,58 @@ label {
 
 .identifier {
     margin-left: 5px;
+}
+
+.actions-buttons {
+    display: flex;
+    margin: 0;
+}
+.actions-buttons button {
+
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    height: 50px;
+    background-color: #758694;
+    color: white;
+    cursor: pointer;
+    border: 0;
+}
+
+.client-btn {
+    border-top-right-radius: 5px;
+    border-left: 1px solid white !important;
+}
+
+.tech-btn {
+    border-top-left-radius: 5px;
+    border-right: 1px solid white !important;
+}
+
+.actions-buttons button:hover {
+    background-color: #F7E7DC;
+    color: black;
+}
+
+.submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.submit button {
+    height: 40px;
+    width: 80px;
+    background-color: #758694;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+
+}
+
+.submit button:hover {
+    background-color: #F7E7DC;
+    color: black;
+    cursor: pointer;
 }
