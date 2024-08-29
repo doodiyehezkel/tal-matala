@@ -7,6 +7,23 @@
     align-items: center;
     justify-content: center;
     margin: 20px;
+    border-radius: 30%;
+    font-size: 16px;
+}
+
+.link-box:active {
+    background-color: white;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    color: #424242;
+}
+
+.link-box:hover {
+    background-color:#758694;
+    font-size: 18px;
 }
 
 .in-row {
@@ -15,7 +32,10 @@
 
 .message {
     width: 300px;
-    border: 1px solid black;
+    border: 1px solid #758694;
     direction: rtl;
     padding: 10px;
+    font-size: 16px;
+    border-radius: 1rem;
+
 }

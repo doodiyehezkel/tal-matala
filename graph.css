@@ -13,7 +13,7 @@
 
 .bar {
     width: 40px; /* Width of each bar */
-    background-color: #4CAF50; /* Color of the bars */
+    background-color: #758694; /* Color of the bars */
     text-align: center;
     color: white;
     font-weight: bold;
@@ -31,16 +31,15 @@
 }
 
 .quantity {
-    margin-top: -10px;
-    width: 50%;
+    width: 40%;
 }
 
 .options {
     display: flex;
     justify-content: flex-end;
     width: 100%;
-    margin-right: 100px;
     margin-top: 20px;
+    direction: rtl;
 }
 
 label {
@@ -48,13 +47,67 @@ label {
 }
 
 .date {
-    margin-left: 5px;
+    margin-left: 3rem;
+    height: 25px;
+    padding: 5px;
+    border-radius: 5%;
 }
 
 .graph-container {
     display: flex;
 }
 
-.back-button{
+.back-button {
     margin: 3rem;
+    height: 5rem;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.3rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.back-button:hover {
+    background-color: #758694;
+    color: white;
+}
+
+.back-button:active {
+    background-color: white;
+}
+
+select {
+    width: 60%;
+    font-size: 1.15rem;
+    padding: 0.3rem;
+    background-color: #fff;
+    border: 1px solid #caced1;
+    border-radius: 0.25rem;
+    color: #000;
+    cursor: pointer;
+}
+
+label {
+    direction: rtl;
+    min-width: 350px;
+}
+
+option:hover {
+background-color: red;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.a:hover {
+    background-color: #758694;
+    color: white;
+}
+
+.a:active {
+    background-color: white;
 }
